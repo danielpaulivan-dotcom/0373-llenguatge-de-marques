@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8"/> 
+        <title>Taula senzilla</title>
+    </head>
+<body>
+ 
+    <h1>Listat de pel·lícules</h1>
+    
+    <table>
+    <table border="1">
+        <tr>
+          <th>Titol</th>
+          <th>Génere</th>
+          <th>Valoracié</th> 
+          <th>Recomanable</th> 
+
+        </tr>
+          <td>Pulp Fiction</td>
+          <td>Accié/Violencia</td> 
+          <td>9</td>  
+          <td>Sí</td>
+        
+        <tr>
+          <td>La vida de Brian</td>
+          <td>Comedia</td> 
+          <td>10</td>
+          <td>Sí</td>   
+        </tr>
+
+        <tr>
+          <td>Crepúsculo</td>
+          <td>Acció</td> 
+          <td>5</td>
+          <td>No</td> 
+        </tr>
+
+        <tr>
+          <td>Madagascar</td>
+          <td>Animació</td> 
+          <td>8</td>
+          <td>Sí</td> 
+        </tr>
+        
+    </table>
+ 
+<section>
+  <h2>Single Table Layout with Rowspan</h2>
+  <table border="1" bordercolor="black">
+    <tr>
+      <td>A</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <!-- C spans vertically across the remaining 4 rows -->
+      <td rowspan="4">C</td>
+      <td>D1</td>
+    </tr>
+    <tr>
+      <td>D2</td>
+    </tr>
+    <tr>
+      <td>D3</td>
+    </tr>
+    <tr>
+      <td>D4</td>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>Nested Tables Layout matching the Image</h2>
+  <table border="1" bordercolor="black">
+    <!-- Row 1: Cell A spanning across the top -->
+    <tr>
+      <td colspan="2">A</td>
+    </tr>
+    <!-- Row 2: Main container split into Left and Right columns -->
+    <tr>
+      <!-- Left Cell: Contains the B1, B2, B3 vertical block -->
+      <td style="vertical-align: top;">
+        <table border="1" bordercolor="black">
+          <tr><td>B1</td></tr>
+          <tr><td>B2</td></tr>
+          <tr><td>B3</td></tr>
+        </table>
+      </td>
+      
+      <!-- Right Cell: Contains the floating C1 and C2 box in the middle -->
+      <td style="vertical-align: middle; text-align: center; padding: 1px;">
+        <table border="1" bordercolor="black" align="center">
+          <tr>
+            <td>C1</td>
+            <td>C2</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</section>
+</body>
+</html>
+
